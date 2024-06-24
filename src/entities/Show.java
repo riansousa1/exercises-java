@@ -21,12 +21,9 @@ public class Show extends Evento {
 
 	@Override
 	public String toString() {
-		return "Conferência: " + getName()
-		+ "\n" 
-		+ "Data: "
-		+ sdf.format(getData())
-		+ "\n"
-		+ "Banda: "
-		+ banda;
+		StringBuilder sb = new StringBuilder();
+		sb.append("Show:" + getName() + "\n");
+
+		return sb.toString();
 	}
 }

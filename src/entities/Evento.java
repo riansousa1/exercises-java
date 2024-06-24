@@ -31,6 +31,8 @@ public abstract class Evento {
 		this.data = data;
 	}
 	
+	
+	@Override
 	public abstract String toString();
 	
 	
