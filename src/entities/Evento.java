@@ -1,8 +1,12 @@
 package entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class Evento {
+	
+	public static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
 	private String name;
 	private Date data;
 	
