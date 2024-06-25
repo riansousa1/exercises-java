@@ -55,6 +55,7 @@ public class Program {
 			} else if (n == 3) {
 				for (Evento e : list) {
 					System.out.println(e);
+					System.out.println();
 				}
 			}
 

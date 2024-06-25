@@ -15,7 +15,9 @@ public class Conferencia extends Evento{
 	public String toString() {
 
 		StringBuilder sb = new StringBuilder();
-		sb.append("Show:" + getName() + "\n");
+		sb.append("Nome da Conferência:" + getName() + "\n");
+		sb.append("Data (dd/MM/yyyy): " + sdf.format(getData()) + "\n");
+		sb.append("Palestrante: " + palestrante);
 		return sb.toString();     
 	}
 

@@ -22,8 +22,9 @@ public class Show extends Evento {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Show:" + getName() + "\n");
-
-		return sb.toString();
+		sb.append("Nome do Show:" + getName() + "\n");
+		sb.append("Data (dd/MM/yyyy): " + sdf.format(getData()) + "\n");
+		sb.append("Banda: " + banda);
+		return sb.toString(); 
 	}
 }
